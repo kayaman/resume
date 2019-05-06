@@ -1,0 +1,261 @@
+{
+  "selectedTemplate": 1,
+  "headings": {
+    "work": "Experience",
+    "skills": "Skills",
+    "projects": "",
+    "awards": "",
+    "education": "Education"
+  },
+  "basics": {
+    "name": "Marco Antonio Gonzalez Junior",
+    "email": "m@rco.sh",
+    "phone": "+55 (11) 98738-0126",
+    "website": "https://linkedin.com/in/marcoantoniogonzalezjunior",
+    "location": {
+      "address": "São Paulo, Brazil"
+    }
+  },
+  "education": [
+    {
+      "location": "São Carlos",
+      "studyType": "BS",
+      "endDate": "2000",
+      "institution": "Universidade Federal de São Carlos",
+      "area": "Materials Engineering",
+      "startDate": "1996"
+    },
+    {
+      "institution": "Faculdade Impacta de Tecnologia",
+      "location": "São Paulo",
+      "studyType": "BS",
+      "area": "Information Systems",
+      "startDate": "2011",
+      "endDate": "2015"
+    },
+    {
+      "location": "São Paulo",
+      "studyType": "MBA",
+      "startDate": "2015",
+      "endDate": "2016",
+      "institution": "Faculdade de Informática e Administração Paulista",
+      "area": "Data Science"
+    },
+    {
+      "institution": "Universidade Cruzeiro do Sul",
+      "location": "São Paulo",
+      "studyType": "Specialization",
+      "startDate": "2016",
+      "endDate": "2017",
+      "area": "Applied Statistics"
+    }
+  ],
+  "work": [
+    {
+      "company": "Calamar",
+      "location": "São Carlos",
+      "position": "Technical Manager",
+      "website": "",
+      "startDate": "Jan 2018",
+      "highlights": [
+        "Startup focused on Conversational Interfaces powered by Artificial Intelligence.",
+        "Chatbots for online businesses, with the goal of improving their customers experience.",
+        "Implement processes, manage and provide technical support and leadership to the Engineering team.",
+        "Work together with the Sales team visiting potential clients. Responsible for technical questions, gathering requested features and insights.",
+        "Work together with the Product team to define and plan the roadmap for medium and long term goals."
+      ],
+      "endDate": "Jun 2018"
+    },
+    {
+      "highlights": [
+        "Biggest e-commerce of pet supplies in Brazil.",
+        "Architect and lead the development of the prime membership project which turned to achieve 30% of the monthly revenue and increased the repurchase rate per year by 500%.",
+        "Responsible for understanding and mapping all the company internal processes related to the ERP system. This effort's goal was to upgrade it in order to be able to create multiple WMS, allowing the company to expand their market to other country states. Lead all the technical details involved.",
+        "Technical leadership and management of the Business Intelligence team. Responsible for research and adoption of cutting edge technologies related to big data.",
+        "Lead the definition and creation of an internal supply chain project. Working together with the procurement department in order to automate, manage and optimize the inventory and automate the purchases from suppliers."
+      ],
+      "company": "Petlove",
+      "position": "Technical Leader",
+      "location": "São Paulo",
+      "startDate": "May 2015",
+      "endDate": "Jan 2018"
+    },
+    {
+      "highlights": [
+        "Digital marketing and performance industry, medium sized.",
+        "Work together with Sales and Product teams to turn ideas into software solutions.",
+        "Lead the Facebook Marketing Partner membership, working closely with the Facebook Engineering team to architech and deliver digital marketing solutions to big companies.",
+        "Lead the Google Partner membership, cooperating with Google Engineers to architect and deliver Google Adwords and Google Shopping automation solutions.",
+        "Started experiencing with Data Science: data mining, analysis and presentation, Machine Learning."
+      ],
+      "company": "Jüssi",
+      "position": "Solutions Architect",
+      "location": "São Paulo",
+      "startDate": "Nov 2012",
+      "endDate": "Jun 2015"
+    },
+    {
+      "highlights": [
+        "Culture and entertainment industry, big sized.",
+        "Development and support internal and external legacy projects.",
+        "Development of a project called Veja SP, an huge catalog and guide for restaurants, nightlife, cinema, etc. ",
+        "Development of a big internal project for content and assets management through the whole company.",
+        "Started experiencing with teams technical leadership and agile methodologies."
+      ],
+      "company": "Editora Abril",
+      "position": "Senior Software Engineer",
+      "location": "São Paulo",
+      "startDate": "Sep 2008",
+      "endDate": "Nov 2012"
+    },
+    {
+      "highlights": [
+        "Financial Services industry, big sized. Widely known and most respected Brazilian name in credit and finance risk analysis.",
+        "Definition and evangelization of architectural patterns, integrations and development processes. Look after internal and external legacy projects.",
+        "Provide technical leadership and support to the development teams."
+      ],
+      "company": "Serasa Experian",
+      "position": "Enterprise Architect",
+      "location": "São Paulo",
+      "startDate": "Apr 2007",
+      "endDate": "Sep 2008"
+    },
+    {
+      "highlights": [
+        "Financial Services industry, big sized.",
+        "Lead the Brazilian offshore teams working on a huge project called Systems Refresh.",
+        "Work closely with mainframe developers in order to understand legacy business logic and rewrite it using recent technologies.",
+        "Strong experience with distributed applications, data warehousing,  business process modeling, transactions and security."
+      ],
+      "company": "Western Union",
+      "position": "Senior Software Engineer",
+      "location": "New Jersey",
+      "startDate": "May 2005",
+      "endDate": "Apr 2007"
+    },
+    {
+      "highlights": [
+        "Toyota do Brasil    - 2003 | 2005",
+        "Wdotnet Internet    - 1999 | 2003",
+        "Flyever Electronics - 1996 | 1999"
+      ],
+      "company": "Past experiences"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Engineering background",
+      "level": "",
+      "keywords": [
+        "Scientific method,",
+        "Calculus",
+        "Algebra",
+        "Physics"
+      ]
+    },
+    {
+      "keywords": [
+        "C++",
+        "Java",
+        "Ruby",
+        "Python",
+        "JavaScript",
+        "R",
+        "Matlab "
+      ],
+      "name": "Programming languages"
+    },
+    {
+      "keywords": [
+        "Linux",
+        "Git",
+        "Bash",
+        "Shell scripting"
+      ],
+      "name": "Open Source Software"
+    },
+    {
+      "keywords": [
+        "Amazon Web Services",
+        "Google Cloud Platform"
+      ],
+      "name": "Cloud and Distributed Computing"
+    },
+    {
+      "keywords": [
+        "W3C Standards",
+        "Web Servers",
+        "Monitoring",
+        "Profiling"
+      ],
+      "name": "Web architecture"
+    },
+    {
+      "keywords": [
+        "Rails",
+        "Django",
+        "Flask",
+        "Node.js"
+      ],
+      "name": "Web development frameworks"
+    },
+    {
+      "keywords": [
+        "Relational",
+        "Key-Valued",
+        "Columnar",
+        "Document oriented"
+      ],
+      "name": "Databases"
+    },
+    {
+      "keywords": [
+        "Legacy",
+        "API Design and Documentation",
+        "REST & GraphQL"
+      ],
+      "name": "Integration and middleware software"
+    },
+    {
+      "keywords": [
+        "Data Wrangling",
+        "Analysis",
+        "Visualization",
+        "Big Data"
+      ],
+      "name": "Data Science"
+    },
+    {
+      "keywords": [
+        "Intuition",
+        "Algorithms",
+        "Modeling",
+        "Scientific Python"
+      ],
+      "name": "Machine Learning"
+    }
+  ],
+  "awards": [
+    {
+      "title": "Outstanding Graduate Student",
+      "date": "Aug 2014",
+      "summary": "Scholarship awarded by keeping grades and classes attendance near 100%. ",
+      "awarder": " Faculdade Impacta de Tecnologia"
+    },
+    {
+      "title": "LabIdeas (Digital Innovation Contest)",
+      "date": "Dec 2009",
+      "awarder": "Editora Abril",
+      "summary": "Recognized by devising the most innovative project."
+    }
+  ],
+  "sections": [
+    "templates",
+    "profile",
+    "education",
+    "skills",
+    "work",
+    "projects",
+    "awards"
+  ]
+}

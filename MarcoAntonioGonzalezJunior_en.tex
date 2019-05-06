@@ -1,0 +1,241 @@
+\documentclass[a4paper]{article}
+    \usepackage{fullpage}
+    \usepackage{amsmath}
+    \usepackage{amssymb}
+    \usepackage{textcomp}
+    \usepackage[utf8]{inputenc}
+    \usepackage[T1]{fontenc}
+    \textheight=10in
+    \pagestyle{empty}
+    \raggedright
+
+\def\bull{\vrule height 0.8ex width .7ex depth -.1ex }
+
+% DEFINITIONS FOR RESUME %%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\area} [2] {
+    \vspace*{-9pt}
+    \begin{verse}
+        \textbf{#1}   #2
+    \end{verse}
+}
+
+\newcommand{\lineunder} {
+    \vspace*{-8pt} \\
+    \hspace*{-18pt} \hrulefill \\
+}
+
+\newcommand{\header} [1] {
+    {\hspace*{-18pt}\vspace*{6pt} \textsc{#1}}
+    \vspace*{-6pt} \lineunder
+}
+
+\newcommand{\employer} [3] {
+    { \textbf{#1} (#2)\\ \underline{\textbf{\emph{#3}}}\\  }
+}
+
+\newcommand{\contact} [3] {
+    \vspace*{-10pt}
+    \begin{center}
+        {\Huge \scshape {#1}}\\
+        #2 \\ #3
+    \end{center}
+    \vspace*{-8pt}
+}
+
+\newenvironment{achievements}{
+    \begin{list}
+        {$\bullet$}{\topsep 0pt \itemsep -2pt}}{\vspace*{4pt}
+    \end{list}
+}
+
+\newcommand{\schoolwithcourses} [4] {
+    \textbf{#1} #2 $\bullet$ #3\\
+    #4 \\
+    \vspace*{5pt}
+}
+
+\newcommand{\school} [4] {
+    \textbf{#1} #2 $\bullet$ #3\\
+    #4 \\
+}
+% END RESUME DEFINITIONS %%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+\vspace*{-40pt}
+
+%==== Profile ====%
+\vspace*{-10pt}
+\begin{center}
+	{\Huge \scshape {Marco Antonio Gonzalez Junior}}\\
+	\vspace{3pt}
+		m@rco.sh $\cdot$ +55 (11) 98738-0126 $\cdot$ São Paulo, Brazil\\
+	\vspace{1.5pt}
+		https://linkedin.com/in/marcoantoniogonzalezjunior\\
+\end{center}
+
+%==== Education ====%
+\header{Education}
+\vspace{1.5mm}
+\textbf{Universidade de São Paulo}\hfill São Paulo\\
+Statistics part-time postgraduade student \hfill 2109 | 2023 \\
+\vspace{1.5mm}
+\textbf{Universidade Cruzeiro do Sul}\hfill São Paulo\\
+Specialization Applied Statistics \hfill 2016 | 2017\\
+\vspace{1.5mm}
+\textbf{Faculdade de Informática e Administração Paulista}\hfill São Paulo\\
+MBA Data Science \hfill 2015 | 2016\\
+\vspace{1.5mm}
+\textbf{Faculdade Impacta de Tecnologia}\hfill São Paulo\\
+BS Information Systems \hfill 2011 | 2015\\
+\vspace{1.5mm}
+\textbf{Universidade Federal de São Carlos}\hfill São Carlos\\
+BS Materials Engineering \hfill 1996 | 2000\\
+\vspace{1.5mm}
+
+%==== Skills ====%
+\header{Skills}
+\vspace{2mm}
+\begin{tabular}{ l l }
+	Engineering background:              & Scientific method, Calculus, Algebra, Physics, Statistics        \\
+	Programming languages:               & C++, Java, Ruby, Python, JavaScript, R, Matlab        \\
+	Open Source Software:                & Linux, Git, Bash, Shell scripting                     \\
+	Cloud and Distributed Computing:     & Amazon Web Services, Google Cloud Platform            \\
+	Web development:                    & W3C Standards, Web Servers, Monitoring, Profiling     \\
+	Web frameworks:          & Rails, Django, Flask, Node.js, React.js, Spring                         \\
+	Mobile development:          & React Native, Redux, Thunk, XCode, Android Studio                     \\
+	Databases:                           & Relational, Key-Valued, Columnar, Document oriented   \\
+	Integration and middleware software: & Legacy, API Design and Documentation, REST \& GraphQL \\
+	Data Science:                        & Data Wrangling, Analysis, Visualization, Big Data     \\
+	Machine Learning:                    & Intuition, Algorithms, Modeling, Scientific Python    \\
+\end{tabular}
+\vspace{0.2mm}
+
+%==== Coursework ====%
+\header{Independent Coursework}
+\vspace{1mm}
+
+\textbf{University of Michigan}\hfill \\
+Statistics with Python Specialization \hfill 2019 \\
+\vspace{1.1mm}
+\textbf{Stanford University}\hfill \\
+Machine Learning (CS229) \hfill 2017 \\
+\vspace{1.1mm}
+\textbf{University of California, San Diego}\hfill \\
+Big Data Specialization \hfill 2016 \\
+\vspace{1.1mm}
+\textbf{University of Washington}\hfill \\
+Machine Learning Specialization \hfill 2016 \\
+\vspace{1.1mm}
+\textbf{Johns Hopkins University}\hfill \\
+Data Science Specialization \hfill 2015 \\
+\vspace{1.1mm}
+\textbf{University of Illinois at Urbana-Champaign}\hfill \\
+Data Mining Specialization \hfill 2015\\
+\vspace{1.1mm}
+\textbf{Linux Professional Institute}\hfill \\
+LPI 101, LPI 102 \hfill 2010 \\
+\vspace{1.1mm}
+\textbf{Sun Microsystems}\hfill \\
+Certified on the Java Platform: SCJA, SCJP, SCJD, SCWCD, SCBCD, SCDJWS, SCEA \hfill 2008\\
+\vspace{2mm}
+
+%==== Experience ====%
+\header{Experience}
+\vspace{1mm}
+
+\textbf{CargoX} \hfill São Paulo\\
+\textit{Senior Software Developer} \hfill since Jan 2019 \\
+\vspace{0.1em}
+\begin{tabular}{lp{15mm}}
+	\hskip 1.5em 
+	
+\end{tabular}
+\vspace{0.5em}
+
+\textbf{Lenovo} \hfill Indaiatuba/SP\\
+\textit{IT Specialist} \hfill Jan 2018 | Jan 2019 \\
+\vspace{0.1em}
+\begin{tabular}{lp{15mm}}
+	\hskip 1.5em 
+	IT Specialist working for the Research, Development and Innovation department.
+\end{tabular}
+\vspace{0.5em}
+
+\textbf{Petlove} \hfill São Paulo\\
+\textit{Technical Leader} \hfill May 2015 | Jan 2018\\
+\vspace{-3mm}
+
+\begin{itemize}
+	\setlength\itemsep{-1mm}
+	\item Biggest e-commerce of pet supplies in Brazil.
+	\item Architect and lead the development of the prime membership project which turned to achieve 30\% of the monthly revenue and increased the repurchase rate per year by 500\%.
+	\item Responsible for understanding and mapping all the company internal processes related to the ERP system. This effort\textquotesingle{}s goal was to upgrade it in order to be able to create multiple WMS, allowing the company to expand their market to other country states. Lead all the technical details involved.
+	\item Technical leadership and management of the Business Intelligence team. Responsible for research and adoption of cutting edge technologies related to big data.
+	\item Lead the definition and creation of an internal supply chain project. Working together with the procurement department in order to automate, manage and optimize the inventory and automate the purchases from suppliers.
+\end{itemize}'
+\vspace{-2.5mm}
+
+\textbf{Jüssi} \hfill São Paulo\\
+\textit{Solutions Architect} \hfill Nov 2012 | May 2015\\
+\vspace{-3mm}
+\begin{itemize}
+	\setlength\itemsep{-1mm}
+	\item Digital marketing and performance industry, medium sized.
+	\item Work together with Sales and Product teams to turn ideas into software solutions.
+	\item Lead the Facebook Marketing Partner membership, working closely with the Facebook Engineering team to architect and deliver digital marketing solutions to big companies.
+	\item Lead the Google Partner membership, cooperating with Google Engineers to architect and deliver Google Adwords and Google Shopping automation solutions.
+\end{itemize}
+\vspace{-2.5mm}
+
+\textbf{Editora Abril} \hfill São Paulo\\
+\textit{Senior Software Engineer} \hfill Sep 2008 | Nov 2012\\
+\vspace{-3mm}
+\begin{itemize}
+	\setlength\itemsep{-1mm}
+	\item Culture and entertainment industry, big sized.
+	\item Development and support internal and external legacy projects, such as a project called Veja SP, an huge catalog and guide for restaurants, nightlife, cinema, etc. And a big internal project for content and assets management through the whole company.
+\end{itemize}
+\vspace{-2.5mm}
+
+\textbf{Serasa Experian} \hfill São Paulo\\
+\textit{Enterprise Architect} \hfill Apr 2007 | Sep 2008\\
+\vspace{-3mm}
+\begin{itemize}
+	\setlength\itemsep{-1mm}
+	\item Financial Services industry, big sized. Widely known and most respected Brazilian name in credit and finance risk analysis.
+	\item Provide technical leadership and support to the development teams. Definition and evangelization of architectural patterns, integrations and development processes. Look after internal and external legacy projects.
+\end{itemize}
+\vspace{-2.5mm}
+
+\textbf{Western Union} \hfill São Paulo\\
+\textit{Senior Software Engineer} \hfill May 2005 | Apr 2007\\
+\vspace{-3mm}
+\begin{itemize}
+	\setlength\itemsep{-1mm}
+	\item Financial Services industry, big sized.
+	\item Lead the Brazilian offshore teams working on a huge project called Systems Refresh.
+	\item Work closely with mainframe developers in order to understand legacy business logic and rewrite it using recent technologies.
+	\item Strong experience with distributed applications, data warehousing, business process modeling, transactions and security.
+\end{itemize}
+\vspace{-2.5mm}\
+
+\textbf{Past experiences}
+
+\begin{tabular}{ l l }
+	Toyota do Brasil & 2003 \textbar{} 2005 \\
+	Wdotnet Internet & 1999 \textbar{} 2003 \\
+	Flyever Electronics & 1996 \textbar{} 1999 \\
+\end{tabular}
+\vspace{1.5mm}
+
+\header{Awards}
+\textbf{Outstanding Graduate Student} \hfill Faculdade Impacta de Tecnologia\\
+Scholarship awarded by keeping grades and classes attendance near 100\%. \hfill Aug 2014\\
+\vspace{1mm}
+\textbf{LabIdeas (Digital Innovation Contest)} \hfill Editora Abril\\
+Recognized by devising the most innovative project. \hfill Dec 2009\\
+\vspace*{2mm}
+
+\ 
+\end{document}
