@@ -1,0 +1,246 @@
+\documentclass[a4paper]{article}
+    \usepackage{fullpage}
+    \usepackage{amsmath}
+    \usepackage{amssymb}
+    \usepackage{textcomp}
+    \usepackage[utf8]{inputenc}
+    \usepackage[T1]{fontenc}
+    \textheight=10in
+    \pagestyle{empty}
+    \raggedright
+
+\def\bull{\vrule height 0.8ex width .7ex depth -.1ex }
+
+% DEFINITIONS FOR RESUME %%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\area} [2] {
+    \vspace*{-9pt}
+    \begin{verse}
+        \textbf{#1}   #2
+    \end{verse}
+}
+
+\newcommand{\lineunder} {
+    \vspace*{-8pt} \\
+    \hspace*{-18pt} \hrulefill \\
+}
+
+\newcommand{\header} [1] {
+    {\hspace*{-18pt}\vspace*{6pt} \textsc{#1}}
+    \vspace*{-6pt} \lineunder
+}
+
+\newcommand{\employer} [3] {
+    { \textbf{#1} (#2)\\ \underline{\textbf{\emph{#3}}}\\  }
+}
+
+\newcommand{\contact} [3] {
+    \vspace*{-10pt}
+    \begin{center}
+        {\Huge \scshape {#1}}\\
+        #2 \\ #3
+    \end{center}
+    \vspace*{-8pt}
+}
+
+\newenvironment{achievements}{
+    \begin{list}
+        {$\bullet$}{\topsep 0pt \itemsep -2pt}}{\vspace*{4pt}
+    \end{list}
+}
+
+\newcommand{\schoolwithcourses} [4] {
+    \textbf{#1} #2 $\bullet$ #3\\
+    #4 \\
+    \vspace*{5pt}
+}
+
+\newcommand{\school} [4] {
+    \textbf{#1} #2 $\bullet$ #3\\
+    #4 \\
+}
+% END RESUME DEFINITIONS %%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+\vspace*{-40pt}
+
+%==== Profile ====%
+\vspace*{-10pt}
+\begin{center}
+	{\Huge \scshape {Marco Antonio Gonzalez Junior}}\\
+	\vspace{2.5pt}
+	 m@rco.sh $\cdot$ +55 (11) 92000-0409 $\cdot$ São Paulo, Brazil\\
+	\vspace{2.5pt}
+		https://linkedin.com/in/marcoantoniogonzalezjunior\\
+\end{center}
+
+%==== Education ====%
+\header{Formação Acadêmica}
+\vspace{1.5mm}
+\textbf{Universidade de São Paulo}\hfill São Paulo\\
+Aluno especial no Departamento de Estatística \hfill 2109 | 2023 \\
+\vspace{1.5mm}
+\textbf{Universidade Cruzeiro do Sul}\hfill São Paulo\\
+Especialização em Estatística Aplicada \hfill 2016 | 2017\\
+\vspace{1.5mm}
+\textbf{Faculdade de Informática e Administração Paulista}\hfill São Paulo\\
+MBA Data Science \hfill 2015 | 2016\\
+\vspace{1.5mm}
+\textbf{Faculdade Impacta de Tecnologia}\hfill São Paulo\\
+Bacharelado em Sistemas de Informação \hfill 2011 | 2015\\
+\vspace{1.5mm}
+\textbf{Universidade Federal de São Carlos}\hfill São Carlos\\
+Bacharelado em Engenharia de Materiais \hfill 1996 | 2000\\
+\vspace{1.5mm}
+
+%==== Skills ====%
+\header{Habilidades}
+\vspace{2mm}
+\begin{tabular}{ l l }
+	Background em Engenharia:              & Método Científico, Cálculo, Álgebra, Física, Estatística        \\
+	Linguagens de Programação:               & C++, Java, Ruby, Python, JavaScript, R, Matlab        \\
+	Software Open Source:                & Linux, Git, Bash, Shell scripting                     \\
+	Computação Distribuída e em Nuvem:     & Amazon Web Services, Google Cloud Platform            \\
+	Desenvolvimento Web:                    & Padrões W3C, Servidores, Depuração, Profiling, Monitoração    \\
+	Frameworks Web:          & Rails, Django, Flask, Node.js, React.js, Spring                         \\
+	Desenvolvimento Mobile:          & React Native, Redux, Thunk, XCode, Android Studio                     \\
+	Bancos de Dados:                           & Relacionais, Chave-Valor, Colunar, Orientados a Documentos   \\
+	Integração e middleware software: & Legado, Design e Documentação de APIs REST e GraphQL \\
+	Data Science:                        & Data Wrangling, Análise, Visualização, Big Data     \\
+	Machine Learning:                    & Intuition, Algoritmos, Modelagem, Scientific Python    \\
+\end{tabular}
+\vspace{0.2mm}
+
+%==== Coursework ====%
+\header{Cursos Independentes}
+\vspace{1mm}
+
+\textbf{University of Michigan}\hfill \\
+Statistics with Python Specialization \hfill 2019 \\
+\vspace{1.1mm}
+\textbf{Stanford University}\hfill \\
+Machine Learning (CS229) \hfill 2017 \\
+\vspace{1.1mm}
+\textbf{University of California, San Diego}\hfill \\
+Big Data Specialization \hfill 2016 \\
+\vspace{1.1mm}
+\textbf{University of Washington}\hfill \\
+Machine Learning Specialization \hfill 2016 \\
+\vspace{1.1mm}
+\textbf{Johns Hopkins University}\hfill \\
+Data Science Specialization \hfill 2015 \\
+\vspace{1.1mm}
+\textbf{University of Illinois at Urbana-Champaign}\hfill \\
+Data Mining Specialization \hfill 2015\\
+\vspace{1.1mm}
+\textbf{Linux Professional Institute}\hfill \\
+LPI 101, LPI 102 \hfill 2010 \\
+\vspace{1.1mm}
+\textbf{Sun Microsystems}\hfill \\
+Certificações na Plataforma Java: SCJA, SCJP, SCJD, SCWCD, SCBCD, SCDJWS, SCEA \hfill 2008\\
+\vspace{2mm}
+
+%==== Experience ====%
+\header{Experiência Profissional}
+\vspace{1mm}
+
+\textbf{CargoX} \hfill São Paulo\\
+\textit{Especialista em TI} \hfill desde Janeiro 2019 \\
+\vspace{0.1em}
+\begin{tabular}{lp{15mm}}
+	\hskip 1.5em 
+\end{tabular}
+\vspace{0.5em}
+
+\textbf{Lenovo} \hfill Indaiatuba\\
+\textit{Especialista em TI} \hfill Janeiro 2018 | Janeiro 2019\\
+\vspace{-2mm}
+
+\begin{itemize}
+	\setlength\itemsep{-1mm}
+	\item Desenvolvimento de aplicações internas utilizando plataforma Java com Spring e React/Redux para o departamento de Pesquisa, Desenvolvimento e Inovação.
+\end{itemize}
+\vspace{-2.5mm}
+
+\vspace{12mm}
+
+\textbf{Petlove} \hfill São Paulo\\
+\textit{Líder Técnico} \hfill Maio 2015 | Janeiro 2018\\
+\vspace{-3mm}
+
+\begin{itemize}
+	\setlength\itemsep{-1mm}
+	\item Maior e-commerce de produtos para animais de estimação do Brasil.
+	\item Arquitetura e liderança do desenvolvimento do projeto de assinaturas que aumentou em 30\% o faturamento mensal e a taxa de recompra anual em 500\%.
+	\item Responsável por entender e mapear todos os departamentos e processos internos da empresa relacionados ao sistema ERP com o objetivo da troca do mesmo, possibilitando assim a criação de múltiplos WMS para permitir a empresa expandir seu mercado em outras regiões do país. Liderança técnica de todos os detalhes envolvidos.
+	\item Liderança técnica e gerenciamento do time de Business Intelligence. Responsável pela pesquisa e adoção de novas tecnologias relacionadas a Big Data.
+	\item Liderança na definição e implementação do projeto interno para cadeia de abastecimento. Trabalhando em conjunto com o departamento de compras com o objetivo de otimizar o estoque e automatizar o ressuprimento nas compras dos fornecedores.
+\end{itemize}
+\vspace{-2.5mm}
+
+\textbf{Jüssi} \hfill São Paulo\\
+\textit{Arquiteto de Soluções} \hfill Novembro 2012 | Maio 2015\\
+\vspace{-3mm}
+\begin{itemize}
+	\setlength\itemsep{-1mm}
+	\item Empresa de marketing digital e performance de médio porte.
+	\item Liderança técnica do programa Facebook Marketing Partner. Desenvolvimento de projetos em parceria com o time de engenharia do Facebook. Arquitetura e desenvolvimento de soluções de marketing e performance para empresas de grande porte. 
+	\item Liderança técnica do programa de parceria Google Partner. Arquitetura e implementação de soluções de automação para Google Adwords e Google Shopping.
+	\item Apoio aos times de vendas e de produto na transformação de ideias em soluções de software.
+\end{itemize}
+\vspace{-2.5mm}
+
+\textbf{Editora Abril} \hfill São Paulo\\
+\textit{Arquiteto de Soluções} \hfill Setembro 2008 | Novembro 2012\\
+\vspace{-3mm}
+\begin{itemize}
+	\setlength\itemsep{-1mm}
+	\item Empresa de cultura e entretenimento de grande porte.
+	\item Desenvolvimento e manutenção de projetos legados internos e externos.
+	\item Desenvolvimento do projeto Veja SP, um grande catálogo e guia de restaurantes, cinema, vida noturna, etc.
+	\item Liderança técnica e desenvolvimento de importante projeto interno para gerenciamento de conteúdo e assets centralizado para toda as editorias da empresa. 
+\end{itemize}
+\vspace{-2.5mm}
+
+\textbf{Serasa Experian} \hfill São Paulo\\
+\textit{Arquiteto de Soluções} \hfill Abril 2007 | Setembro 2008\\
+\vspace{-3mm}
+\begin{itemize}
+	\setlength\itemsep{-1mm}
+	\item Empresa de serviços financeiros de grande porte. Amplamente conhecida e mais respeitada instituição de crédito e análise de risco do país.
+	\item Liderança técnica dos times de desenvolvimento. Definição de padrões de arquitetura, integração de sistemas legados e processos de desenvolvimento. 
+	\item Manutenção de projetos legados internos e externos.
+\end{itemize}
+\vspace{-2.5mm}
+
+\textbf{Western Union} \hfill São Paulo\\
+\textit{Engenheiro de Software Senior} \hfill Maio 2005 | Abril 2007\\
+\vspace{-3mm}
+\begin{itemize}
+	\setlength\itemsep{-1mm}
+	\item Empresa de serviços financeiros de grande porte.
+	\item Liderança de times offshore no Brasil, trabalhando num grande projeto chamado Systems Refresh (modernização de sistemas legados).
+	\item Trabalho conjunto com desenvolvedores mainframe com objetivo de absorver lógica de negócio e reescrever utilizando tecnologias recentes
+	\item Experiência sólida em aplicações distribuídas, data warehousing, modelagem de processos, transações e segurança.
+\end{itemize}
+\vspace{-5mm}\
+
+\textbf{Experiências anteriores}
+
+\begin{tabular}{ l l }
+	Toyota do Brasil & 2003 \textbar{} 2005 \\
+	Wdotnet Internet & 1999 \textbar{} 2003 \\
+	Flyever Electronics & 1996 \textbar{} 1999 \\
+\end{tabular}
+\vspace{1.5mm}
+
+\header{Awards}
+\textbf{Melhor aluno da graduação} \hfill Faculdade Impacta de Tecnologia\\
+Bolsa escolar concedida por manter notas e frequência perto de 100\%. \hfill Agosto 2014\\
+\vspace{1mm}
+\textbf{LabIdeas (Concurso de Inovação Digital)} \hfill Editora Abril\\
+Prêmio pelo desenvolvimento do projeto mais inovador. \hfill Dezembro 2009\\
+\vspace*{2mm}
+
+\ 
+\end{document}
