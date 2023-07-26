@@ -1,0 +1,8 @@
+.DS_Store
+*.aux
+*.log
+*.gz
+.xdp*
+.DS_Store
+node_modules
+.env
