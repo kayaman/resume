@@ -22,6 +22,14 @@
 % END RESUME DEFINITIONS %%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{document}
+\newlength{\sectionindent}
+\setlength{\sectionindent}{-0.4in} % Negative value shifts content left
+
+% Update the header command to apply this indent
+\renewcommand{\header}[1] {
+    {\hspace*{-18pt}\vspace*{6pt} \textsc{#1}}
+    \vspace*{-6pt} \lineunder
+}
 \vspace*{-40pt}
 
 %==== Profile ====%
@@ -36,7 +44,10 @@
 
 %==== Professional Summary ====%
 \header{Professional Summary}
-Seasoned Solutions Architect with over 15 years of experience in designing and implementing large-scale systems and cloud-native solutions. Proven track record of leading cross-functional teams and delivering innovative, high-performance, and scalable solutions for the finance, retail, and e-commerce sectors. Strong expertise in AWS cloud architecture, microservices, and data-driven decision-making. Adept at aligning technology with business goals and driving continuous improvement across development teams.
+I am an engineer who loves challenges, hard problems and to learn something new everyday. I am a fast paced and proactive self learner. I am a lifelong learner. I am passionate about learning new idioms, programmng languages and technologies. I am a result-oriented and motivated person, and I assume responsibilities.
+I have over 20 years of programming experience, what made me become a polyglot programmer. Experienced technical leader. Problem solver with solid engineering foundation. Passionate about evangelism, research and sharing bleeding edge technologies. I have started my journey as a developer at the age of 11. I have been through Basic, Assembler, Cobol, Pascal, C, C++, PHP, Java, JavaScript, Python, Ruby, R and others. Recently I am focused more on TypeScript and Rust. I have full stack and DevOps experience. I know a big number of frameworks. Polyglot persistence. Deep web standards and HTTP knowledge. Great UNIX/Linux experience.
+Besides having a strong technical education, I appreciate working with people and the exchange of knowledge and experiences between different people. For me it is easy to relate to people and to work in teams. Leadership attitude and management ability are natural features that I intend to improve professionally with technique and experience.
+I am currently working with Machine Learning, Neural Networks and Generatiive AI.
 \newline
 
 %==== Education ====%
@@ -55,20 +66,34 @@ BS Materials Engineering \hfill 1996 | 2000\\
 %==== Skills ====%
 \header{Skills}
 \vspace{2mm}
-\begin{tabular}{ l l }
-	Engineering background:              & Scientific method, Calculus, Algebra, Physics, Statistics       \\
-	Programming languages:               & C++, Java, Ruby, Python, JavaScript, TypeScript, Flutter        \\
-	Open Source Software:                & Linux, Bash, Shell scripting, Git                               \\
-	Cloud and Distributed Computing:     & Amazon Web Services, Google Cloud Platform                      \\
-	Web development:                     & W3C Standards, Web Servers, Debugging, Profiling, Monitoring    \\
-	Web frameworks:                      & Rails, Django, Flask, Express, React, Next.js, Svelte           \\
-	Mobile development:                  & React Native, Redux, XCode, Android Studio                      \\
-	Databases:                           & Relational, Key-Valued, Columnar, Document oriented             \\
-	Integration and middleware software: & Legacy, API Design and Docs, REST, GraphQL, gRPC                \\
-	Data Science:                        & Data Wrangling, Analysis, Visualization, Big Data               \\
-	Machine Learning:                    & Intuition, Algorithms, Modeling, Scientific Python              \\
+\begin{tabular}{ @{}l l }
+	Engineering background:               & Scientific method, Calculus, Algebra, Physics, Statistics        \\[0.5ex]
+	Cloud Computing:                      & Amazon Web Services, Azure, Google Cloud Platform                \\[0.5ex]
+	Architecture Governance:              & Decision Frameworks, Technical Debt Management, Review Processes \\[0.5ex]
+	Enterprise Integration:               & Integration Patterns, API Gateways, Message Brokers, ESB,        \\
+                                        & Event Sourcing, CQRS, Saga Pattern, Service Mesh, Message Queues \\[0.5ex]
+  Architecture Approaches:              & Domain-Driven Design, Event-Driven Architecture, Microservices,  \\
+                                        & Service-Oriented Architecture, Hexagonal Architecture            \\[0.5ex]
+	DevOps:                               & Docker, Kubernetes, Terraform, Packer, GitHub Actions, ArgoCD,     \\
+	                                      & Helm, Jenkins, Ansible, GitOps Workflows                         \\[0.5ex]
+	CI/CD Pipelines:                      & Advanced Deployment Strategies, Pipeline Security, Build Automation \\[0.5ex]
+	Observability:                        & Prometheus, Grafana, Jaeger, OpenTelemetry, Datadog, ELK Stack,   \\
+	                                      & Grafana LGTM Stack, Distributed Tracing, SLOs/SLIs, Error Budgets \\[0.5ex]
+	Performance Engineering:              & Load Testing, Caching Patterns, Distributed Systems Optimization \\[0.5ex]
+	API Development:                      & RESTful Architecture, GraphQL, gRPC, WebSockets, API Gateway,     \\
+	                                      & OpenAPI/Swagger, Security, Rate Limiting, Versioning            \\[0.5ex]
+	Web Development:                      & Frontend (HTML5, CSS3, JavaScript), Backend, Performance Optimization, \\
+	                                      & SEO, Responsive Design, Web Accessibility, Progressive Web Apps  \\[0.5ex]
+	Web frameworks:                       & React, Next.js, Rails, Django, Flask, Express, Svelte           \\[0.5ex]
+	Programming languages:                & TypeScript, Python, Go, Ruby, Java, Flutter, C++               \\[0.5ex]
+	Databases:                            & Relational, Key-Valued, Columnar, Graph and Document oriented   \\[0.5ex]
+	Data Science:                         & Data Wrangling, Analysis, Visualization, Big Data, Streaming      \\
+	                                      & Architectures, Statistical Modeling, ETL Pipelines, Data Lakes        \\[0.5ex]
+	Machine Learning:                     & Algorithm Design, Model Optimization, Feature Engineering, Evaluation \\[0.5ex]
+	Deep Learning:                        & PyTorch, TensorFlow, Keras, Neural Networks, Computer Vision, NLP,       \\
+	                                      & Transformers                                                     \\
 \end{tabular}
-\vspace{1mm}
+\vspace{6mm}
 
 %==== Coursework ====%
 \header{Certifications}
@@ -175,6 +200,7 @@ In this role, my main accomplishments were:
 \item Provided clients with strategic recommendations on enhancing their AI and cloud strategies, enabling them to maximize the value of their data and technology investments.
 \item Delivered training and knowledge transfers on leveraging WatsonX tools for predictive analytics, customer insights, and fraud detection in finance, and personalized shopping experiences in retail.
 \end{itemize}
+\vspace{-1mm}
 
 %======== banQi ========% 
 \textbf{banQi}                                 \hfill São Paulo             \\
@@ -191,6 +217,8 @@ In this role, my key responsibilities included:
     \item Overseeing platform engineering efforts to ensure that infrastructure and tooling supported scalability, automation, and efficient development workflows.
     \item Recruiting and mentoring technical talent, fostering a culture of excellence and growth within the organization.
 \end{itemize}
+\vspace{-1mm}
+
 %======== Petlove ========%
 \textbf{Petlove}                               \hfill São Paulo             \\
 \textit{Tech Lead}                             \hfill May 2015 | Jun 2019   \\
@@ -203,7 +231,7 @@ In this role, my key responsibilities included:
 	\item Technical leadership and management of the Business Intelligence team. Responsible for research and adoption of cutting edge technologies related to big data.
 	\item Lead the definition and creation of an internal supply chain project. Working together with the procurement department in order to automate, manage and optimize the inventory and automate the purchases from suppliers.
 \end{itemize}
-
+\vspace{-1.5mm}
 
 %======== Jüssi ========%
 \textbf{Jüssi}                                 \hfill São Paulo         \\
@@ -216,7 +244,7 @@ In this role, my key responsibilities included:
 	\item Lead the Facebook Marketing Partner membership, working closely with the Facebook Engineering team to architect and deliver digital marketing solutions to big companies.
 	\item Lead the Google Partner membership, cooperating with Google Engineers to architect and deliver Google Adwords and Google Shopping automation solutions.
 \end{itemize}
-\vspace{-2.5mm}
+\vspace{-2mm}
 
 \textbf{Editora Abril} \hfill São Paulo\\
 \textit{Senior Software Engineer} \hfill Sep 2008 | Nov 2012\\
@@ -228,43 +256,15 @@ In this role, my key responsibilities included:
 \end{itemize}
 \vspace{-2.5mm}
 
-\textbf{Serasa Experian} \hfill São Paulo\\
-\textit{Enterprise Architect} \hfill Apr 2007 | Sep 2008\\
-\vspace{-3mm}
-\begin{itemize}
-	\setlength\itemsep{-1mm}
-	\item Financial Services industry, big sized. Widely known and most respected Brazilian name in credit and finance risk analysis.
-	\item Provide technical leadership and support to the development teams. Definition and evangelization of architectural patterns, integrations and development processes. Look after internal and external legacy projects.
-\end{itemize}
-\vspace{-2.5mm}
-
-\textbf{Western Union} \hfill São Paulo\\
-\textit{Senior Software Engineer} \hfill May 2005 | Apr 2007\\
-\vspace{-3mm}
-\begin{itemize}
-	\setlength\itemsep{-1mm}
-	\item Financial Services industry, big sized.
-	\item Lead the Brazilian offshore teams working on a huge project called Systems Refresh.
-	\item Work closely with mainframe developers in order to understand legacy business logic and rewrite it using recent technologies.
-	\item Strong experience with distributed applications, data warehousing, business process modeling, transactions and security.
-\end{itemize}
-\vspace{-2.5mm}\
-
 \header{Past Experiences}
 \vspace{1.5mm}
-\begin{tabular}{ l l }
-	Toyota do Brasil     \\
-	Wdotnet Internet     \\
-	Flyever Electronics  \\
+\begin{tabular}{ @{}l l }
+    Serasa Experian & Enterprise Architect \\
+    Western Union & Senior Software Engineer \\
+    Toyota do Brasil & Software Engineer    \\
+    Wdotnet Internet & Owner    \\
+    Flyever Electronics & Software Engineer \\
 \end{tabular}
 \vspace{1.5mm}
-
-\header{Awards}
-\textbf{Outstanding Graduate Student} \hfill Faculdade Impacta de Tecnologia\\
-Scholarship awarded by keeping grades and classes attendance near 100\%. \hfill Aug 2014\\
-\vspace{1mm}
-\textbf{LabIdeas (Digital Innovation Contest)} \hfill Editora Abril\\
-Recognized by devising the most innovative project. \hfill Dec 2009\\
-\vspace*{2mm}
 
 \end{document}
