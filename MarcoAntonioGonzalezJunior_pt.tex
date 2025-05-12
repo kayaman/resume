@@ -3,253 +3,312 @@
     \usepackage{amsmath}
     \usepackage{amssymb}
     \usepackage{textcomp}
-    \usepackage[utf8]{inputenc}
+    \usepackage[utf8]{inputenc} % Mantido para suportar caracteres PT-BR
     \usepackage[T1]{fontenc}
     \textheight=10in
     \pagestyle{empty}
     \raggedright
-
 \def\bull{\vrule height 0.8ex width .7ex depth -.1ex }
 
 % DEFINITIONS FOR RESUME %%%%%%%%%%%%%%%%%%%%%%%
-
-\newcommand{\area} [2] {
-    \vspace*{-9pt}
-    \begin{verse}
-        \textbf{#1}   #2
-    \end{verse}
-}
-
 \newcommand{\lineunder} {
     \vspace*{-8pt} \\
     \hspace*{-18pt} \hrulefill \\
 }
-
 \newcommand{\header} [1] {
     {\hspace*{-18pt}\vspace*{6pt} \textsc{#1}}
     \vspace*{-6pt} \lineunder
 }
-
-\newcommand{\employer} [3] {
-    { \textbf{#1} (#2)\\ \underline{\textbf{\emph{#3}}}\\  }
-}
-
-\newcommand{\contact} [3] {
-    \vspace*{-10pt}
-    \begin{center}
-        {\Huge \scshape {#1}}\\
-        #2 \\ #3
-    \end{center}
-    \vspace*{-8pt}
-}
-
-\newenvironment{achievements}{
-    \begin{list}
-        {$\bullet$}{\topsep 0pt \itemsep -2pt}}{\vspace*{4pt}
-    \end{list}
-}
-
-\newcommand{\schoolwithcourses} [4] {
-    \textbf{#1} #2 $\bullet$ #3\\
-    #4 \\
-    \vspace*{5pt}
-}
-
-\newcommand{\school} [4] {
-    \textbf{#1} #2 $\bullet$ #3\\
-    #4 \\
-}
 % END RESUME DEFINITIONS %%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{document}
+\newlength{\sectionindent}
+\setlength{\sectionindent}{-0.4in} % Negative value shifts content left
+
+% Update the header command to apply this indent
+\renewcommand{\header}[1] {
+    {\hspace*{-18pt}\vspace*{6pt} \textsc{#1}}
+    \vspace*{-6pt} 
+\lineunder
+}
 \vspace*{-40pt}
 
-%==== Profile ====%
+%==== Perfil ====%
 \vspace*{-10pt}
 \begin{center}
-	{\Huge \scshape {Marco Antonio Gonzalez Junior}}\\
-	\vspace{2.5pt}
-	 m@rco.sh $\cdot$ +55 (11) 92000-0409 $\cdot$ São Paulo, Brazil\\
-	\vspace{2.5pt}
-		https://linkedin.com/in/marcoantoniogonzalezjunior\\
-	\vspace{2.5pt}
-		NÃO UTILIZAR! DESATUALIZADO! \\
+    {\Huge \scshape {Marco Antonio Gonzalez Junior}}                \\
+    \vspace{2.5pt}
+    m@rco.sh $\cdot$ +55 (11) 91577-7715 $\cdot$ São Paulo, Brasil  \\
+    \vspace{2.5pt}
+    https://linkedin.com/in/marcoantoniogonzalezjunior              \\
 \end{center}
 
-%==== Education ====%
+%==== Resumo Profissional ====%
+\header{Resumo Profissional}
+Sou um engenheiro que adora desafios, problemas difíceis e aprender algo novo todos os dias. 
+Aprendo rápido, sou proativo e autodidata. Sou um eterno aprendiz. 
+Sou apaixonado por aprender novos idiomas, linguagens de programação e tecnologias. 
+Sou uma pessoa orientada a resultados, motivada e assumo responsabilidades. 
+Tenho mais de 20 anos de experiência em programação, o que me tornou um programador poliglota. Líder técnico experiente. 
+Solucionador de problemas com sólida base de engenharia. Apaixonado por evangelismo, pesquisa e compartilhamento de tecnologias de ponta. 
+Comecei minha jornada como desenvolvedor aos 11 anos. Passei por Basic, Assembler, Cobol, Pascal, C, C++, PHP, Java, JavaScript, Python, Ruby, R e outros. 
+Recentemente, estou mais focado em TypeScript e Rust. Tenho experiência full stack e DevOps. 
+Conheço um grande número de frameworks. Persistência poliglota. Profundo conhecimento de padrões web e HTTP. Ótima experiência com UNIX/Linux. 
+Além de ter uma forte formação técnica, aprecio trabalhar com pessoas e a troca de conhecimentos e experiências entre diferentes pessoas. 
+Para mim é fácil me relacionar com pessoas e trabalhar em equipe. 
+Atitude de liderança e capacidade de gestão são características naturais que pretendo aprimorar profissionalmente com técnica e experiência. 
+Atualmente estou trabalhando com Machine Learning, Neural Networks e Generative AI. 
+\newline
+
+%==== Formação Acadêmica ====%
 \header{Formação Acadêmica}
 \vspace{1.5mm}
-\textbf{Universidade de São Paulo}\hfill São Paulo\\
-Aluno especial no Departamento de Estatística \hfill 2109 | 2023 \\
-\vspace{1.5mm}
-\textbf{Universidade Cruzeiro do Sul}\hfill São Paulo\\
-Especialização em Estatística Aplicada \hfill 2016 | 2017\\
-\vspace{1.5mm}
 \textbf{Faculdade de Informática e Administração Paulista}\hfill São Paulo\\
-MBA Data Science \hfill 2015 | 2016\\
+MBA Data Science \hfill 2015 |
+2016\\
 \vspace{1.5mm}
 \textbf{Faculdade Impacta de Tecnologia}\hfill São Paulo\\
-Bacharelado em Sistemas de Informação \hfill 2011 | 2015\\
+Bacharelado em Sistemas de Informação \hfill 2011 |
+2015\\
 \vspace{1.5mm}
 \textbf{Universidade Federal de São Carlos}\hfill São Carlos\\
-Bacharelado em Engenharia de Materiais \hfill 1996 | 2000\\
-\vspace{1.5mm}
+Bacharelado em Engenharia de Materiais \hfill 1996 |
+2000\\
+\vspace{2mm}
 
-%==== Skills ====%
+%==== Habilidades ====%
 \header{Habilidades}
 \vspace{2mm}
-\begin{tabular}{ l l }
-	Background em Engenharia:              & Método Científico, Cálculo, Álgebra, Física, Estatística        \\
-	Linguagens de Programação:               & C, Java, Ruby, Python, JavaScript, TypeScript, R, Matlab        \\
-	Software Open Source:                & Linux, Git, Bash, Shell scripting                     \\
-	Computação Distribuída e em Nuvem:     & Amazon Web Services, Google Cloud Platform            \\
-	Desenvolvimento Web:                    & Padrões W3C, Servidores, Depuração, Profiling, Monitoração    \\
-	Frameworks Web:          & Rails, Django, Flask, Node.js, React,  Spring                         \\
-	Desenvolvimento Mobile:          & React Native, Redux, Thunk, XCode, Android Studio                     \\
-	Bancos de Dados:                           & Relacionais, Chave-Valor, Colunar, Orientados a Documentos   \\
-	Integração e middleware software: & Legado, Design e Documentação de APIs REST e GraphQL \\
-	Data Science:                        & Data Wrangling, Análise, Visualização, Big Data     \\
-	Machine Learning:                    & Intuition, Algoritmos, Modelagem, Scientific Python    \\
+\begin{tabular}{ @{}l l }
+	Formação em Engenharia:             & Método científico, Cálculo, Álgebra, Física, Estatística        \\[0.5ex]
+	Computação em Nuvem:                 & Amazon Web Services, Azure, Google Cloud Platform                \\[0.5ex]
+	Governança de Arquitetura:         & Frameworks de Decisão, Gerenciamento de Débito 
+Técnico, Processos de Revisão \\[0.5ex]
+	Integração Empresarial:             & Integration Patterns, API Gateways, Message Brokers, ESB,        \\
+                                        & Event Sourcing, CQRS, Saga Pattern, Service Mesh, Message Queues \\[0.5ex]
+  Abordagens de Arquitetura:           
+ & Domain-Driven Design, Event-Driven Architecture, Microservices,  \\
+                                        & Service-Oriented Architecture, Hexagonal Architecture            \\[0.5ex]
+	DevOps:                              & Docker, Kubernetes, Terraform, 
+Packer, GitHub Actions, ArgoCD,     \\
+	                                     & Helm, Jenkins, Ansible, GitOps Workflows                         \\[0.5ex]
+	Pipelines de CI/CD:                 & 
+Estratégias Avançadas de Deploy, Segurança de Pipeline, Automação de Build \\[0.5ex]
+	Observabilidade:                     & Prometheus, Grafana, Jaeger, OpenTelemetry, Datadog, ELK Stack,   \\
+	                                     & Grafana LGTM Stack, Distributed Tracing, SLOs/SLIs, Error Budgets \\[0.5ex]
+	Engenharia de Performance:          
+  & Testes de Carga, Padrões de Cache, Otimização de Sistemas Distribuídos \\[0.5ex]
+	Desenvolvimento de API:             & RESTful Architecture, GraphQL, gRPC, WebSockets, API Gateway,     \\
+	                                     & OpenAPI/Swagger, Security, Rate Limiting, Versioning           
+\\[0.5ex]
+	Desenvolvimento Web:                 & Frontend (HTML5, CSS3, JavaScript), Backend, Otimização de Performance, \\
+	                                     & SEO, Design Responsivo, Acessibilidade Web, Progressive Web Apps  \\[0.5ex]
+	Frameworks Web:                     
+& React, Next.js, Rails, Django, Flask, Express, Svelte           \\[0.5ex]
+	Linguagens de Programação:           & TypeScript, Python, Go, Ruby, Java, Flutter, C++               \\[0.5ex]
+	Bancos de Dados:                     & Relacional, Chave-Valor, Colunar, Grafo e Orientado a Documentos   \\[0.5ex]
+	Data 
+Science:                        & Data Wrangling, Analysis, Visualization, Big Data, Streaming      \\
+	                                     & Architectures, Statistical Modeling, Pipelines ETL, Data Lakes        \\[0.5ex]
+	Machine Learning:                   
+  & Design de Algoritmos, Otimização de Modelos, Engenharia de Features, Avaliação \\[0.5ex]
+	Deep Learning:                       & PyTorch, TensorFlow, Keras, Neural Networks, Computer Vision, NLP,       \\
+	                                     & 
+Transformers                                                     \\
 \end{tabular}
-\vspace{0.2mm}
+\vspace{6mm}
 
-%==== Coursework ====%
-\header{Cursos Independentes}
+%==== Certificações ====%
+\header{Certificações}
 \vspace{1mm}
 
-\textbf{University of Michigan}\hfill \\
+\textbf{Amazon Web Services (AWS)}          \hfill       \\
+Certified Solutions Architect Professional  \hfill 2025  \\
+Certified Machine Learning Engineer         \hfill 2024  \\
+Certified Machine 
+Learning - Specialty      \hfill 2024  \\
+Certified AI Practitioner                   \hfill 2024  \\
+Certified Solutions Architect Associate     \hfill 2022  \\
+Certified Developer                         \hfill 2022  \\
+Certified Cloud Practitioner                \hfill 2022  \\
+
+\vspace{1mm}
+\textbf{Stanford University and DeepLearning.AI} 
+\hfill      \\
+Machine Learning Specialization                  \hfill 2024 \\
+Deep Learning Specialization                     \hfill 2024 \\
+
+\vspace{1mm}
+\textbf{IBM}                          \hfill      \\
+IBM AI Engineering Professional       \hfill 2024 \\
+IBM AI Developer 
+Professional         \hfill 2024 \\
+Generative AI for Software Developers \hfill 2024 \\
+
+\vspace{1mm}
+\textbf{University of Alberta}                  \hfill      \\
+Software Design and Architecture Specialization \hfill 2024 \\
+
+\vspace{1mm}
+\textbf{University of Michigan}       \hfill      \\
 Statistics with Python Specialization \hfill 2019 \\
-\vspace{1.1mm}
-\textbf{Stanford University}\hfill \\
-Machine Learning (CS229) \hfill 2017 \\
-\vspace{1.1mm}
+
+\vspace{1.0mm}
+\textbf{Stanford University} \hfill      \\
+Machine Learning (CS229)     \hfill 2017 \\
+
+\vspace{1.0mm}
 \textbf{University of California, San Diego}\hfill \\
 Big Data Specialization \hfill 2016 \\
-\vspace{1.1mm}
-\textbf{University of Washington}\hfill \\
+
+\vspace{1.0mm}
+\textbf{University 
+of Washington}\hfill \\
 Machine Learning Specialization \hfill 2016 \\
-\vspace{1.1mm}
+
+\vspace{1.0mm}
 \textbf{Johns Hopkins University}\hfill \\
 Data Science Specialization \hfill 2015 \\
-\vspace{1.1mm}
-\textbf{University of Illinois at Urbana-Champaign}\hfill \\
-Data Mining Specialization \hfill 2015\\
-\vspace{1.1mm}
-\textbf{Linux Professional Institute}\hfill \\
-LPI 101, LPI 102 \hfill 2010 \\
-\vspace{1.1mm}
+
+\vspace{1.0mm}
+\textbf{University of Illinois at Urbana-Champaign} \hfill      \\
+Data Mining Specialization                          \hfill 2015 \\
+
+\vspace{1.0mm}
+\textbf{Linux Professional Institute} \hfill      \\
+LPI 101, LPI 102                      \hfill 2010 \\
+
+\vspace{1.0mm}
 \textbf{Sun Microsystems}\hfill \\
-Certificações na Plataforma Java: SCJA, SCJP, SCJD, SCWCD, SCBCD, SCDJWS, SCEA \hfill 2008\\
+Certified on the Java Platform: SCJA, 
+SCJP, SCJD, SCWCD, SCBCD, SCDJWS, SCEA \hfill 2008\\
 \vspace{2mm}
 
-%==== Experience ====%
+%==== Experiência Profissional ====%
 \header{Experiência Profissional}
 \vspace{1mm}
-
-\textbf{banQi} \hfill São Paulo\\
-\textit{Principal Solutions Architect} \hfill Junho 2021 | Atual \\
-\vspace{-3mm}
-\vspace{0.1em}
+%======== Capco ========% 
+\textbf{Capco}                                                      \hfill São Paulo              \\
+\textit{Arquiteto de Soluções - Inteligência Artificial}             
+ \hfill Set 2024 | atual    \\
+\vspace{1mm}
+Como Arquiteto de Soluções especializado em inteligência artificial e modernização de legados, lidero esforços para transformar sistemas desatualizados usando Generative AI. 
+Utilizando LLMs comerciais e de código aberto, capacito organizações a modernizar suas aplicações legadas em COBOL, Natural, PL/1 e outras para arquiteturas robustas baseadas em microservices em Java, TypeScript e .NET. 
+Meu trabalho conecta sistemas legados e tecnologia de ponta, garantindo transições tranquilas para os clientes. 
+\newline
+Principais contribuições:
+\vspace{-2mm}
 \begin{itemize}
-	\setlength\itemsep{-1mm}
-	
+\setlength\itemsep{-1mm}
+\item Projetei e ajustei LLMs, construindo sistemas de Retrieval-Augmented Generation (RAG) para recuperação inteligente de informações. 
+\item Desenvolvi um toolkit de modernização de microservices para:
+\vspace{-2mm}
+\begin{itemize}
+\setlength\itemsep{-1mm}
+    \item Curadoria e crawling de código. 
+\item Documentação abrangente de código fonte e extração de regras de negócio.
+    \item Visualização em banco de dados de grafos para melhor entendimento dos componentes. 
+\item Geração de código fonte modernizado com testes automatizados e documentação. 
+\end{itemize}
+\vspace{-2mm}
+\item Projetei uma infraestrutura multi-cloud usando Terraform, Packer e Kubernetes para implantação flexível em nuvem ou ambientes on-premises. 
 \end{itemize}
 
-\vspace{0.5em}
-\textit{Tech Lead} \hfill Setembro 2020 | Junho 2021 \\
-\vspace{0.1em}
-\begin{tabular}{lp{15mm}}
-	\hskip 1.5em 
-	
-\end{tabular}
-\vspace{0.5em}
 
-\textbf{CargoX} \hfill São Paulo\\
-\textit{IT Specialist} \hfill Janeiro 2019 | Setembro 2020 \\
-\vspace{0.1em}
-\begin{tabular}{lp{15mm}}
-	\hskip 1.5em 
-	
-\end{tabular}
-\vspace{0.5em}
+%======== IBM ========% 
+\textbf{IBM}                                                      \hfill São Paulo              \\
+\textit{Arquiteto de Soluções Sênior}                              
+\hfill Jul 2022 |
+Set 2024    \\
+\vspace{1mm}
+Como Consultor na IBM, especializei-me na implementação e otimização das funcionalidades do IBM WatsonX para clientes corporativos, entregando soluções orientadas por AI para atender às necessidades de negócios nos setores financeiro e de varejo. 
+Minhas responsabilidades incluíam aconselhar clientes sobre as melhores práticas para integrar as capacidades avançadas de machine learning, processamento de linguagem natural e analytics do WatsonX em aplicações cloud-native e arquitetura de soluções. 
+Colaborei com equipes multifuncionais para projetar e implementar estratégias de AI escaláveis que aprimoraram a eficiência operacional, a tomada de decisão baseada em dados e a experiência do cliente. 
+\newline
+Nesta função, minhas principais realizações foram:
+\vspace{-2mm}
+\begin{itemize}
+\setlength\itemsep{-1mm}
+\item Liderei consultorias abrangentes desde a descoberta até a implantação, projetando soluções de AI cloud-native que abordaram desafios específicos da indústria nos setores financeiro e de varejo. 
+\item Arquitetei e implementei modelos WatsonX escaláveis em ambientes cloud-native para suportar sistemas de alta disponibilidade e otimizar o desempenho em ambos os setores. 
+\item Desenvolvi arquiteturas de soluções para integrar capacidades de AI do WatsonX com infraestrutura de nuvem existente, garantindo funcionalidade e segurança contínuas. 
+\item Forneci aos clientes recomendações estratégicas sobre como aprimorar suas estratégias de AI e nuvem, permitindo-lhes maximizar o valor de seus dados e investimentos em tecnologia. 
+\item Entreguei treinamentos e transferências de conhecimento sobre o uso das ferramentas WatsonX para análise preditiva, insights de clientes e detecção de fraudes no setor financeiro, e experiências de compra personalizadas no varejo. 
+\end{itemize}
+\vspace{-1mm}
 
-\textbf{Petlove} \hfill São Paulo\\
-\textit{Líder Técnico} \hfill Maio 2015 | Janeiro 2019\\
+%======== banQi ========% 
+\textbf{banQi}                                 \hfill São Paulo             \\
+\textit{Arquiteto de Soluções Sênior}            \hfill Jun 2019 |
+Jul 2022   \\
+\vspace{1mm}
+Como Arquiteto de Soluções e Líder Técnico, liderei a colaboração multifuncional com stakeholders para garantir que a arquitetura do sistema estivesse alinhada tanto com os objetivos estratégicos da organização quanto com a visão do produto. 
+Unifiquei projetos arquitetônicos e conduzi decisões técnicas, garantindo escalabilidade, sustentabilidade e eficiência em nossos sistemas. 
+Meu trabalho focou na entrega de arquiteturas de soluções robustas e eficazes, abordando desafios complexos de negócios enquanto mantinha o alinhamento com as estratégias empresariais. 
+\newline
+Nesta função, minhas principais responsabilidades incluíam:
+\vspace{-2mm} 
+\begin{itemize}
+\setlength\itemsep{-1mm}
+    \item Avaliar, adotar e defender novas tecnologias para impulsionar a inovação contínua em arquitetura e práticas de desenvolvimento. 
+\item Liderar o projeto, desenvolvimento e implantação de soluções técnicas que atendessem a altos padrões de desempenho, segurança, disponibilidade e integridade de dados. 
+\item Supervisionar os esforços de engenharia de plataforma para garantir que a infraestrutura e as ferramentas suportassem escalabilidade, automação e fluxos de trabalho de desenvolvimento eficientes. 
+\item Recrutar e orientar talentos técnicos, fomentando uma cultura de excelência e crescimento dentro da organização. 
+\end{itemize}
+\vspace{-1mm}
+
+%======== Petlove ========%
+\textbf{Petlove}                               \hfill São Paulo             \\
+\textit{Líder Técnico}                             \hfill Mai 2015 |
+Jun 2019   \\
 \vspace{-3mm}
-
 \begin{itemize}
 	\setlength\itemsep{-1mm}
-	\item Maior e-commerce de produtos para animais de estimação do Brasil.
-	\item Arquitetura e liderança do desenvolvimento do projeto de assinaturas que aumentou em 30\% o faturamento mensal e a taxa de recompra anual em 500\%.
-	\item Responsável por entender e mapear todos os departamentos e processos internos da empresa relacionados ao sistema ERP com o objetivo da troca do mesmo, possibilitando assim a criação de múltiplos WMS para permitir a empresa expandir seu mercado em outras regiões do país. Liderança técnica de todos os detalhes envolvidos.
-	\item Liderança técnica e gerenciamento do time de Business Intelligence. Responsável pela pesquisa e adoção de novas tecnologias relacionadas a Big Data.
-	\item Liderança na definição e implementação do projeto interno para cadeia de abastecimento. Trabalhando em conjunto com o departamento de compras com o objetivo de otimizar o estoque e automatizar o ressuprimento nas compras dos fornecedores.
+	\item Maior e-commerce de produtos para pets do Brasil. 
+\item Arquitetei e liderei o desenvolvimento do projeto de assinatura prime, que alcançou 30% da receita mensal e aumentou a taxa de recompra anual em 500%. 
+\item Responsável por entender e mapear todos os processos internos da empresa relacionados ao sistema ERP. 
+O objetivo desse esforço era atualizá-lo para permitir a criação de múltiplos WMS, possibilitando à empresa expandir seu mercado para outros estados do país. 
+Liderei todos os detalhes técnicos envolvidos.
+	\item Liderança técnica e gerenciamento da equipe de Business Intelligence. 
+Responsável pela pesquisa e adoção de tecnologias de ponta relacionadas a big data. 
+\item Liderei a definição e criação de um projeto interno de supply chain. 
+Trabalhando em conjunto com o departamento de compras para automatizar, gerenciar e otimizar o estoque e automatizar as compras de fornecedores. 
 \end{itemize}
-\vspace{-2.5mm}
+\vspace{-1.5mm}
 
-\textbf{Jüssi} \hfill São Paulo\\
-\textit{Arquiteto de Soluções} \hfill Novembro 2012 | Maio 2015\\
+%======== Jüssi ========%
+\textbf{Jüssi}                                 \hfill São Paulo         \\
+\textit{Arquiteto de Soluções} \hfill Nov 2012 |
+Mai 2015                 \\
 \vspace{-3mm}
 \begin{itemize}
 	\setlength\itemsep{-1mm}
-	\item Empresa de marketing digital e performance de médio porte.
-	\item Liderança técnica do programa Facebook Marketing Partner. Desenvolvimento de projetos em parceria com o time de engenharia do Facebook. Arquitetura e desenvolvimento de soluções de marketing e performance para empresas de grande porte. 
-	\item Liderança técnica do programa de parceria Google Partner. Arquitetura e implementação de soluções de automação para Google Adwords e Google Shopping.
-	\item Apoio aos times de vendas e de produto na transformação de ideias em soluções de software.
+	\item Indústria de marketing digital e performance, porte médio. 
+\item Trabalhar em conjunto com as equipes de Vendas e Produto para transformar ideias em soluções de software. 
+\item Liderar a parceria Facebook Marketing Partner, trabalhando em estreita colaboração com a equipe de Engenharia do Facebook para arquitetar e entregar soluções de marketing digital para grandes empresas. 
+\item Liderar a parceria Google Partner, cooperando com Engenheiros do Google para arquitetar e entregar soluções de automação para Google Adwords e Google Shopping. 
 \end{itemize}
-\vspace{-2.5mm}
+\vspace{-2mm}
 
 \textbf{Editora Abril} \hfill São Paulo\\
-\textit{Arquiteto de Soluções} \hfill Setembro 2008 | Novembro 2012\\
+\textit{Engenheiro de Software Sênior} \hfill Set 2008 | Nov 2012\\
 \vspace{-3mm}
 \begin{itemize}
 	\setlength\itemsep{-1mm}
-	\item Empresa de cultura e entretenimento de grande porte.
-	\item Desenvolvimento e manutenção de projetos legados internos e externos.
-	\item Desenvolvimento do projeto Veja SP, um grande catálogo e guia de restaurantes, cinema, vida noturna, etc.
-	\item Liderança técnica e desenvolvimento de importante projeto interno para gerenciamento de conteúdo e assets centralizado para toda as editorias da empresa. 
+	\item Indústria de cultura e entretenimento, grande porte. 
+\item Desenvolvimento e suporte a projetos legados internos e externos, como um projeto chamado Veja SP, um enorme catálogo e guia de restaurantes, vida noturna, cinema, etc. E um grande projeto interno para gerenciamento de conteúdo e ativos em toda a empresa. 
 \end{itemize}
 \vspace{-2.5mm}
 
-\textbf{Serasa Experian} \hfill São Paulo\\
-\textit{Arquiteto de Soluções} \hfill Abril 2007 | Setembro 2008\\
-\vspace{-3mm}
-\begin{itemize}
-	\setlength\itemsep{-1mm}
-	\item Empresa de serviços financeiros de grande porte. Amplamente conhecida e mais respeitada instituição de crédito e análise de risco do país.
-	\item Liderança técnica dos times de desenvolvimento. Definição de padrões de arquitetura, integração de sistemas legados e processos de desenvolvimento. 
-	\item Manutenção de projetos legados internos e externos.
-\end{itemize}
-\vspace{-2.5mm}
-
-\textbf{Western Union} \hfill São Paulo\\
-\textit{Engenheiro de Software Senior} \hfill Maio 2005 | Abril 2007\\
-\vspace{-3mm}
-\begin{itemize}
-	\setlength\itemsep{-1mm}
-	\item Empresa de serviços financeiros de grande porte.
-	\item Liderança de times offshore no Brasil, trabalhando num grande projeto chamado Systems Refresh (modernização de sistemas legados).
-	\item Trabalho conjunto com desenvolvedores mainframe com objetivo de absorver lógica de negócio e reescrever utilizando tecnologias recentes
-	\item Experiência sólida em aplicações distribuídas, data warehousing, modelagem de processos, transações e segurança.
-\end{itemize}
-\vspace{-5mm}\
-
-\textbf{Experiências anteriores}
-
-\begin{tabular}{ l l }
-	Toyota do Brasil & 2003 \textbar{} 2005 \\
-	Wdotnet Internet & 1999 \textbar{} 2003 \\
-	Flyever Electronics & 1996 \textbar{} 1999 \\
+\header{Experiências Anteriores}
+\vspace{1.5mm}
+\begin{tabular}{ @{}l l }
+    Serasa Experian & Arquiteto Corporativo \\
+    Western Union & Engenheiro de Software Sênior \\
+    Toyota do Brasil & Engenheiro de Software    \\
+    Wdotnet Internet & Proprietário    \\
+    Flyever Electronics & Engenheiro de Software \\
 \end{tabular}
 \vspace{1.5mm}
 
-\header{Awards}
-\textbf{Melhor aluno da graduação} \hfill Faculdade Impacta de Tecnologia\\
-Bolsa escolar concedida por manter notas e frequência perto de 100\%. \hfill Agosto 2014\\
-\vspace{1mm}
-\textbf{LabIdeas (Concurso de Inovação Digital)} \hfill Editora Abril\\
-Prêmio pelo desenvolvimento do projeto mais inovador. \hfill Dezembro 2009\\
-\vspace*{2mm}
-
-\ 
 \end{document}
