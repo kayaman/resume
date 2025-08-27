@@ -1,0 +1,170 @@
+\documentclass[a4paper]{article}
+    \usepackage{fullpage}
+    \usepackage{amsmath}
+    \usepackage{amssymb}
+    \usepackage{textcomp}
+    \usepackage[utf8]{inputenc}
+    \usepackage[T1]{fontenc}
+    \textheight=10in
+    \pagestyle{empty}
+    \raggedright
+\def\bull{\vrule height 0.8ex width .7ex depth -.1ex }
+
+% DEFINITIONS FOR RESUME %%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\lineunder} {
+    \vspace*{-8pt} \\
+    \hspace*{-18pt} \hrulefill \\
+}
+\newcommand{\header} [1] {
+    {\hspace*{-18pt}\vspace*{6pt} \textsc{#1}}
+    \vspace*{-6pt} \lineunder
+}
+% END RESUME DEFINITIONS %%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+\newlength{\sectionindent}
+\setlength{\sectionindent}{-0.4in} % Negative value shifts content left
+
+% Update the header command to apply this indent
+\renewcommand{\header}[1] {
+    {\hspace*{-18pt}\vspace*{6pt} \textsc{#1}}
+    \vspace*{-6pt} \lineunder
+}
+\vspace*{-40pt}
+
+%==== Profile ====%
+\vspace*{-10pt}
+\begin{center}
+    {\Huge \scshape {Marco Antonio Gonzalez Junior}}                \\
+    \vspace{2.5pt}
+    m@rco.sh $\cdot$ +55 (11) 91577-7715 $\cdot$ São Paulo, Brazil  \\
+    \vspace{2.5pt}
+    https://linkedin.com/in/marcoantoniogonzalezjunior              \\
+    \vspace{1.25mm}
+    \textbf{Solutions Architect | Cloud Engineer | Artificial Intelligence Engineer}
+\end{center}
+\vspace{-1.5mm}
+%==== Professional Summary ====%
+\header{Professional Summary}
+Solutions Architect with 15+ years building scalable enterprise systems and 10+ years in AI/ML. Led technical teams delivering solutions that generated 30\% revenue increases and 200\% improvement in customer retention across fintech, retail, and digital marketing. Currently specializing in generative AI, fine-tuning foundation models, RAG systems, agentic architectures, and AI-assisted development workflows with MCP integrations. \\
+\vspace{0.5mm}
+%==== Skills ====%
+\header{Skills}
+\vspace{0.5mm}
+\textbf{Enterprise Architecture:} Domain-Driven Design, Event-Driven Architecture, Microservices, Enterprise Integration Patterns \\
+\textbf{AI \& Machine Learning:} Machine Learning, Generative AI, LLMs, RAG Systems, Fine-tuning, Multi-Agent Systems, MLOps, Knowledge Graphs \\
+\textbf{Cloud \& DevOps:} AWS/Azure/GCP, Kubernetes, Docker, Terraform, CI/CD Pipelines, Infrastructure as Code \\
+\textbf{Leadership:} Technical Team Management, Cross-functional Collaboration, Technology Strategy, Digital Transformation \\
+\vspace{0.5mm}
+%==== Experience ====%
+\header{Experience}
+
+%======== Capco ========% 
+\textbf{Capco}                                                      \hfill São Paulo              \\
+\textit{Solutions Architect - Artificial Intelligence}               \hfill September 2024 – Present    \\
+\vspace{0.5mm}
+Leading AI-driven legacy modernization initiatives using knowledge graphs and LLMs to transform enterprise COBOL systems.
+\vspace{-2mm}
+\begin{itemize}
+\setlength\itemsep{-1mm}
+\item Architected knowledge graph-based modernization platform using Neo4j, LangGraph, and AWS Bedrock, processing legacy COBOL applications across multiple industries, reducing migration timelines by 60\%
+\item Built production RAG systems with vector databases (Pinecone, Weaviate) and knowledge graphs (Neo4j) achieving 95\% accuracy in business logic preservation across language translations from COBOL to Java/.NET
+\item Led team of 8 engineers implementing LLM orchestration frameworks with Python and TypeScript, enabling automated documentation of 20M+ lines of legacy code
+\item Delivered \$400k+ in cost savings using AWS cloud infrastructure and Kubernetes deployments, eliminating technical debt and reducing operational risk
+\end{itemize}
+
+%======== IBM ========%
+\textbf{IBM}                                                      \hfill São Paulo              \\
+\textit{Senior Solutions Architect}                               \hfill July 2022 – September 2023    \\
+\vspace{0.5mm} 
+Specialized in implementing IBM WatsonX AI solutions, fine-tuning foundation models, and architecting advanced RAG systems with continuous learning pipelines for enterprise financial services clients.
+\vspace{-2mm}
+\begin{itemize}
+\setlength\itemsep{-1mm}
+\item Architected 10+ foundation model fine-tuning pipelines and RAG knowledge bases using WatsonX, PyTorch, and TensorFlow, delivering conversational AI solutions that achieved 85\% automated resolution rate and improved customer satisfaction by 25\%
+\item Designed multi-cloud MLOps infrastructure with automated continuous learning pipelines on AWS and Azure, supporting real-time model evaluation and retraining workflows that maintained 99.9\% availability while processing 5M+ monthly interactions through fine-tuned conversational AI systems
+\item Implemented comprehensive model evaluation frameworks using BLEU/ROUGE scores, semantic similarity metrics, and hallucination detection systems, achieving 15\% higher accuracy than generic models while reducing customer query handling time by 40\% through intelligent context-aware response generation
+\item Implemented Docker-containerized model deployment strategies and IaC solutions using Terraform, enabling client teams to achieve 90\% faster AI model deployment cycles and maintain 90\%+ task completion rates
+\end{itemize}
+
+%======== banQi ========% 
+\textbf{banQi}                                 \hfill São Paulo             \\
+\textit{Senior Solutions Architect}            \hfill June 2019 – July 2022   \\
+\vspace{0.5mm}
+Led cross-functional technical architecture initiatives, ensuring system scalability and enterprise strategic alignment.
+\vspace{-2mm}
+\begin{itemize}
+\setlength\itemsep{-1mm}
+\item Architected microservices platform using Docker, Kubernetes, and Go supporting 10x traffic growth, reducing system response times by 65\%
+\item Led adoption of containerization across 15+ applications using Helm, ArgoCD, and GitOps workflows, achieving 99.95\% uptime and reducing deployment times by 80\%
+\item Managed technical team of 12 engineers implementing agile development practices with GitHub Actions CI/CD, increasing delivery velocity by 45\%
+\end{itemize}
+
+%======== Petlove ========%
+\textbf{Petlove}                               \hfill São Paulo             \\
+\textit{Tech Lead}                             \hfill May 2015 – June 2019   \\
+\vspace{0.5mm}
+Led technical architecture for Brazil's largest pet supplies e-commerce platform, driving digital transformation initiatives.
+\vspace{-2mm}
+\begin{itemize}
+\setlength\itemsep{-1mm}
+\item Architected prime membership platform using Ruby on Rails, Elixir, and PostgreSQL, achieving 30\% of monthly revenue (\$2M+) and 500\% increase in customer repurchase rate
+\item Led ERP system modernization using Python and distributed warehouse management, enabling multi-state expansion and supporting 200\% business growth
+\item Built Business Intelligence team of 6 engineers, implementing big data solutions with ETL pipelines that improved inventory forecasting accuracy by 85\%
+\item Designed automated supply chain optimization using machine learning algorithms, reducing procurement costs by 15\% and eliminating 90\% of stockout incidents
+\end{itemize}
+
+%======== Jüssi ========%
+\textbf{Jüssi}                                 \hfill São Paulo         \\
+\textit{Solutions Architect} \hfill November 2012 – May 2015                 \\
+\vspace{0.5mm}
+Architected digital marketing automation solutions as Facebook Marketing Partner and Google Partner for enterprise clients.
+\vspace{-2mm}
+\begin{itemize}
+\setlength\itemsep{-1mm}
+\item Led Facebook Marketing Partner certification, collaborating with Facebook Engineering using GraphQL APIs to deliver marketing automation for biggest e-commerces in Brazil
+\item Architected Google Ads automation platforms using Java and RESTful APIs, managing \$5M+ monthly ad spend and achieving 40\% improvement in ROAS
+\item Built real-time bidding optimization algorithms using statistical modeling, reducing customer acquisition costs by 25\% across 5k+ enterprise campaigns
+\item Designed scalable attribution platform using message queues and distributed processing, processing 10M+ daily events with sub-second response times
+\end{itemize}
+
+%======== Editora Abril ========%
+\textbf{Editora Abril} \hfill São Paulo\\
+\textit{Senior Software Engineer} \hfill September 2008 – November 2012\\
+\vspace{0.5mm}
+Developed large-scale content management systems for Brazil's leading media and entertainment publisher.
+\vspace{-2mm}
+\begin{itemize}
+\setlength\itemsep{-1mm}
+\item Built Veja SP platform using HTML5, CSS3, JavaScript, and MySQL, serving 500K+ monthly users with 99.9\% uptime
+\item Architected enterprise content management system using Java and SOA, supporting 20+ publications and 200+ concurrent editors
+\item Optimized database performance using advanced SQL queries and caching strategies, reducing page load times by 60\% and supporting 10x traffic growth
+\item Led migration from legacy systems to modern web architecture using agile methodologies, improving development velocity by 75\%
+\end{itemize}
+
+\header{Past Experiences}
+\vspace{0.75mm}
+\begin{tabular}{ @{}l l }
+    Serasa Experian (Java Enterprise Architect), Western Union (Senior Software Engineer), Toyota \\ do Brasil (Software Engineer), Wdotnet Internet (Owner), Flyever Electronics (Software Engineer) \\
+\end{tabular}
+
+%==== Education ====%
+\header{Education}
+\vspace{0.5mm}
+\textbf{Faculdade de Informática e Administração Paulista} \hfill MBA Data Science (2015-2016) \\
+\textbf{Faculdade Impacta de Tecnologia} \hfill BS Information Systems (2011-2015) \\
+\textbf{Universidade Federal de São Carlos} \hfill BS Materials Engineering (1996-2000) \\
+\vspace{0.5mm}
+
+%==== Certifications ====%
+\header{Certifications}
+\vspace{0.5mm}
+\textbf{AWS:} Solutions Architect Professional (2025), Data Engineer Associate (2025), ML Engineer (2024), ML Specialty (2024), AI Practitioner (2024), Solutions Architect Associate (2022), Developer (2022) \\
+\textbf{Specializations:} Stanford Machine Learning and Deep Learning (2024), IBM AI Engineering Professional and AI Developer (2024), Data Science (2015), Recommender Systems (2014) 
+
+%==== Languages ====%
+\header{Languages}
+\vspace{0.5mm}
+\textbf{Portuguese:} Native \hfill \textbf{English:} Fluent \hfill \textbf{Spanish:} Conversational
+
+\end{document}
